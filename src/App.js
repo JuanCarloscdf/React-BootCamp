@@ -6,8 +6,10 @@ function App() {
   return (
     <div className="App">
       <h1>{mensajes + ' dasdasda'}</h1><br/>
+      <h2>ffsdfsdfsdfsd</h2>  
       {+new Date()}
-      
+    
+
     </div>
   );
 }
