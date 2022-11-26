@@ -1,17 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Mensaje from "./Mensaje"
 
-function App() {
-  const mensajes = 'hola mundos'
-  return (
-    <div className="App">
-      <h1>{mensajes + ' dasdasda'}</h1><br/>
-      <h2>ffsdfsdfsdfsd</h2>  
-      {+new Date()}
-    
-
-    </div>
-  );
+const Description = ({des})=>{
+  return <p>{des}</p>
 }
 
-export default App;
+const App = () => {
+  /* ffffffffffffffffffffff */
+  const msg = 'test of param'
+  const msg1 = 'test of param 1'
+  const msg2 = 'test of param 2'
+  return (
+    <div>
+      <h1>hola  mundo</h1>
+      <Mensaje color="red" text={msg}/>
+      <Mensaje color="green" text={msg1}/>
+      <Mensaje color="yellow" text={msg2}/>
+      <Description des="this is a description of the page"/>
+    </div>
+  )
+}
+
+export default App
